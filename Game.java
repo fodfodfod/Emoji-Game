@@ -15,6 +15,8 @@ public class Game {
             compare2();
         }
 
+        displayWinner();
+
 
 
     }
@@ -42,11 +44,22 @@ public class Game {
         else if(choice == 2){
             winner_index = face_2;
         }
+        else{
+            System.out.println("waaa");
+        }
         people.get(winner_index).addPoint();
     }
 
     private void displayWinner(){
-        int winner = 0;
+        int winner_index = 0;
+        int winner_value = 0;
+        for(int i = 0; i < people.size(); i ++){
+            if(people.get(i).getPoints() > winner_value){
+                winner_index = i;
+                winner_value = people.get(i).getPoints();
+            }
+        }
+        System.out.println("The winner is: " + people.get(winner_index).getSymbol());
         
     }
 }

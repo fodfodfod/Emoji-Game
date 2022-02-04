@@ -26,4 +26,8 @@ public class Person {
     public void addPoint(){
         points++;
     }
+
+    public int getPoints(){
+        return points;
+    }
 }
