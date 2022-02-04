@@ -28,10 +28,10 @@ public class Game {
         Scanner kb = new Scanner(System.in);
         Random r = new Random();
 
-        int face_1 = r.nextInt(4);
-        int face_2 = r.nextInt(4);
+        int face_1 = r.nextInt(people.size());
+        int face_2 = r.nextInt(people.size());
         while(face_1 == face_2){
-            face_2 = r.nextInt(4);
+            face_2 = r.nextInt(people.size());
         }
         System.out.println("pick face 1 or 2");
         System.out.println(people.get(face_1).getSymbol());
