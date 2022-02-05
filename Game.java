@@ -9,9 +9,14 @@ public class Game {
         people.add( new Person("Bimmeh", "f", "😍", "descirpiodjosfjo;sdjf;oajs;dofijo;" ));
         people.add( new Person("Simmeh", "m", "🥳", "descirpiodjosfjo;sdjf;oajs;dofijo;" ));
         people.add( new Person("Greg", "g", "😎", "descirpiodjosfjo;sdjf;oajs;dofijo;" ));
+        people.add( new Person("Greg", "g", "🤪", "descirpiodjosfjo;sdjf;oajs;dofijo;" ));
+        people.add( new Person("Greg", "g", "🤩", "descirpiodjosfjo;sdjf;oajs;dofijo;" ));
+        people.add( new Person("Greg", "g", "☹️", "descirpiodjosfjo;sdjf;oajs;dofijo;" ));
+        people.add( new Person("Greg", "g", "🤬", "descirpiodjosfjo;sdjf;oajs;dofijo;" ));
+        people.add( new Person("Greg", "g", "🙄", "descirpiodjosfjo;sdjf;oajs;dofijo;" ));
         System.out.println(people);
 
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 50; i++){
             compare2();
         }
 
